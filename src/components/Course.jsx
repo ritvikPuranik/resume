@@ -1,3 +1,7 @@
+import React from "react";
+
+const courseImg = ["webDevBootcamp.png", "blockchainAZ.png", "ethDevBootcamp.png"];
+
 
 const divStyle = {
   backgroundSize: 'cover',
@@ -11,7 +15,7 @@ const divStyle = {
 function Course(props){
     return (<div className="col d-flex align-items-start">
     <div>
-      <img src={props.img} alt={props.title} style={divStyle} />
+      <img src={require("../assets/"+courseImg[props.index])} alt={props.title} style={divStyle} />
       <h4 className="fs-2 mt-3">{props.title}</h4>
       <p>{props.description}</p>
       <a href={props.link} className="btn btn-info">
@@ -21,5 +25,6 @@ function Course(props){
   </div>);
 
 }
+
 
 export default Course;

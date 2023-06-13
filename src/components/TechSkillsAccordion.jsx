@@ -13,15 +13,22 @@ let TechSkillsAccordion = () => {
         <button class="btn btn-lg btn-light mb-3" onClick={() => handleClick(0)}>
             My role in PreSales/ Solutions Team
           </button>
-          {activeIndex === 0 && <div>Some of my work includes writing automation scripts and jobs, building ITSM solutions for customers and developing custom applications as per client requirements. My company is a leader in the conversational AI space and with the advent of ChatGPT, a large part of our activities revolves around interacting with the tool(Prompt Engineering).</div>}
+          
+          {activeIndex === 0 && <div class="card shadow">
+          <div class="card-body">
+          Some of my work includes writing automation scripts and jobs, building ITSM solutions for customers and developing custom applications as per client requirements. My company is a leader in the conversational AI space and with the advent of ChatGPT, a large part of our activities revolves around interacting with the tool(Prompt Engineering).
+          </div>
+        </div>}
       </div>
       <div>
+      
         <button class="btn btn-lg btn-light mb-3" onClick={() => handleClick(1)}>
           Technical skills that I'm proficient in
         </button>
-        {activeIndex === 1 && <div>
+        {activeIndex === 1 && <div class="card shadow">
+                <div class="card-body">
                 <ul>
-                  <li>Avaamo's internal platform for designing Chatbots</li>
+                  <li>Avaamo's internal platform for developing Chatbots</li>
                   <li>Javascript(NodeJS)</li>
                   <li>ExpressJS</li>
                   <li>React</li>
@@ -36,7 +43,9 @@ let TechSkillsAccordion = () => {
                     <li>ngrok</li>
                     <li>AWS console</li>
                   </ul>
-                </ul></div>}
+                </ul>
+          </div>
+        </div>}
       </div>
     </div>
   );

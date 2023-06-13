@@ -28,8 +28,8 @@ function Projects(){
         <div className="container px-4 py-5" id="hanging-icons">
           <h2 className="pb-2 border-bottom">Certifications</h2>
           <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            {courses && courses.map(item=>{
-                  return (<Course key={item.title} title={item.title} description={item.description} link={item.link} img={item.img}/>);
+            {courses && courses.map((item, index)=>{
+                  return (<Course key={item.title} title={item.title} description={item.description} link={item.link} img={item.img} index={index}/>);
               })}
           </div>
         </div>

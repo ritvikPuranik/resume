@@ -1,15 +1,17 @@
 import {startups} from '../content.js';
 import Carousel from 'react-bootstrap/Carousel';
 
+const ventureImg = ["ezPark.png", "delOr.png", "naturePure.png"];
+
 const VenturesCarousel = () => {
   return (
     <Carousel>
-      {startups && startups.map(item=>{
+      {startups && startups.map((item, index)=>{
           return (
             <Carousel.Item style={{marginLeft: "100px"}}>
         <img
           className="d-block"
-          src={item.img}
+          src={require("../assets/"+ventureImg[index])}
           alt={item.title}
           style={{backgroundSize: 'auto',
           backgroundPosition: 'center',
@@ -35,7 +37,7 @@ function Ventures(){
       <p className="lead mb-4">I'm a digital product junky. Over the years, I've used several web and mobile apps across industries and verticals. Eventually, I decided that it would be interesting to try designing and building some of my own.</p>
       <VenturesCarousel />
       <div class="d-grid gap-2 col-6 mx-auto">
-        <a href="./assets/Ritvik Puranik (1).pdf" class="btn btn-outline-primary btn-lg" target="_blank" style={{marginTop: "9rem"}}>Download Resume</a>
+        <a href={require("../assets/Ritvik Puranik (1).pdf")} class="btn btn-outline-primary btn-lg" target="_blank" style={{marginTop: "9rem"}}>Download Resume</a>
       </div>
       {/* <a class="btn resume-button" href="./assets/Ritvik Puranik (1).pdf" target="_blank"></a> */}
     </div>

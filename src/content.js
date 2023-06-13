@@ -37,7 +37,7 @@ const startups = [
 ];
 
 
-const courses = [
+const courses = [ // The image links have to be manually added into "courseImg" array in Course.jsx
     {
         "title": "The Complete Web Design Course",
         "description": "Covered serveral key web dev topics ranging from HTML/CSS/JS to frameworks like ExpressJS. Covered Database and Security related cencepts too.",
