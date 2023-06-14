@@ -34,7 +34,7 @@ let TechSkillsAccordion = () => {
                   <li>React</li>
                   <li>HTML/CSS</li>
                   <li>MySql and Sequelize(ORM for SQL)</li>
-                  <b>Other Tools I'm proficient with</b>
+                  <b>Some Developer Tools I'm proficient with</b>
                   <ul>
                     <li>Postman</li>
                     <li>Terminal</li>

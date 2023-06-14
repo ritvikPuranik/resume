@@ -2,7 +2,7 @@ import React from "react";
 import TechSkillsAccordion from "./TechSkillsAccordion.jsx";
 
 function Intro(){
-    return (<section className="hero is-white has-text-centered">
+    return (<section id="intro" className="hero is-white has-text-centered">
     <div className="px-4 py-5 my-5 text-center">
       <h1 className="display-5 fw-bold">Software Engineer, Blockchain Developer, and more</h1>
       <h2>I solve real world problems through code.</h2>

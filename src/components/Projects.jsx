@@ -3,7 +3,7 @@ import Project from './Project.jsx';
 import Course from './Course.jsx';
 
 function Projects(){
-    return(<section>
+    return(<section id="projects">
         <div className="px-4 py-5 my-5 text-center">
           <h1 className="display-5 fw-bold">My Work so far</h1>
           <h3>Here are a few projects I've completed and certificates I collected along the way. Want to know more?
