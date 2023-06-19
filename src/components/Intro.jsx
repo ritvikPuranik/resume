@@ -50,7 +50,7 @@ function Intro(){
           <h1 className="display-5 fw-bold lh-1 mb-3">I aspire to be a Blockchain Developer</h1>
           <p className="lead">As someone who's fascinated by Blockchain technology, I have spent time and effort understanding the tech and developing projects around it.</p>
           <div className="row-md-6">
-            <div className="h-100 p-5 bg-light border rounded-3">
+            <div className="h-100 p-5 border rounded-3">
               <h4>Tools/ Frameworks I have used:</h4>
               <p><ul>
                 <li>Ganache</li>

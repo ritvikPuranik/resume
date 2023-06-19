@@ -1,6 +1,10 @@
-/* body {
-  background-color: #BFEAF5 !important;
-} */
+body {
+  /* background-color: #25008a; */
+  background-color: #4b5b2f;
+  background-image: url("./assets/45-degree-fabric-light.png") !important;
+  color: white;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 
 
 nav {  
@@ -43,28 +47,22 @@ nav ul li a:hover {
   color: #de0e0e;
 }
 
-/* nav ul .active a {
-  color: #F38A8A;
-  border-bottom: 3px solid #F38A8A;
-} */
-
-
-#intro {
-  background: #CDE9CA;
+/* #intro {
+  background: #f3f3eb;
   top: 40px;
 }
 
 #projects {
-  background: #CDE9CA;
+  background: #ffffff;
 }
 
 #ventures {
-  background: #F1EDD0;
+  background: #ffffff;
 }
 
 #reach-out {
-  background: #ffffff;
-}
+  background: #f3f3eb;
+} */
 
 @media (min-width: 992px) {
   .rounded-lg-3 { border-radius: .3rem; }
