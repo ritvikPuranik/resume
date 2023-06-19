@@ -7,10 +7,10 @@ function Intro(){
       <h1 className="display-5 fw-bold">Software Engineer, Blockchain Developer, and more</h1>
       <h2>I solve real world problems through code.</h2>
       <ul id="menu">
-        <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-2x fa-google"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-2x fa-linkedin"></i></a></li>
-        <li><a href="https://www.facebook.com/ritvik.puranik"><i className="fa fa-2x fa-facebook"></i></a></li>
-        <li><a href="https://github.com/ritvikPuranik"><i className="fa fa-2x fa-github"></i></a></li>
+        <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-2x fa-google li-light"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-2x fa-linkedin li-light"></i></a></li>
+        <li><a href="https://www.facebook.com/ritvik.puranik"><i className="fa fa-2x fa-facebook li-light"></i></a></li>
+        <li><a href="https://github.com/ritvikPuranik"><i className="fa fa-2x fa-github li-light"></i></a></li>
       </ul>
     </div>
   

@@ -11,9 +11,9 @@ function ReachOut(){
           <h1 className="display-5 fw-bold lh-1 mb-3">Get In Touch</h1>
           <p className="lead">Interested in working together? Reach out, lets have a chat.</p>
           <ul id="menu">
-            <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-2x fa-google"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-2x fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/ritvik.puranik"><i className="fa fa-2x fa-facebook"></i></a></li>
+            <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-2x fa-google li-light"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-2x fa-linkedin li-light"></i></a></li>
+            <li><a href="https://www.facebook.com/ritvik.puranik"><i className="fa fa-2x fa-facebook li-light"></i></a></li>
           </ul>
         </div>
       </div>

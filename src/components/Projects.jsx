@@ -8,8 +8,8 @@ function Projects(){
           <h1 className="display-5 fw-bold">My Work so far</h1>
           <h3>Here are a few projects I've completed and certificates I collected along the way. Want to know more?
             <ul id="menu">
-              <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-google"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-linkedin"></i></a></li>
+              <li><a href="mailto:ritvik.puranik@gmail.com"><i className="fa fa-google li-light"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ritvik-puranik/"><i className="fa fa-linkedin li-light"></i></a></li>
             </ul>
           </h3>
         </div>

@@ -47,23 +47,6 @@ nav ul li a:hover {
   color: #de0e0e;
 }
 
-/* #intro {
-  background: #f3f3eb;
-  top: 40px;
-}
-
-#projects {
-  background: #ffffff;
-}
-
-#ventures {
-  background: #ffffff;
-}
-
-#reach-out {
-  background: #f3f3eb;
-} */
-
 @media (min-width: 992px) {
   .rounded-lg-3 { border-radius: .3rem; }
 }
@@ -145,4 +128,8 @@ margin: 5rem 0;
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
   background-color: black;
+}
+
+.li-light{
+  color:aquamarine;
 }
