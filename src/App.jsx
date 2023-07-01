@@ -1,9 +1,9 @@
 import './App.css';
+import Navbar from './components/Navbar.jsx';
 import Intro from './components/Intro.jsx';
 import Projects from './components/Projects.jsx';
 import Ventures from './components/Ventures.jsx';
 import ReachOut from './components/ReachOut.jsx';
-import Navbar from './components/Navbar.jsx';
 
 function App() {
   return (

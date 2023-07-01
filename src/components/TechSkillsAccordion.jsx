@@ -15,7 +15,7 @@ let TechSkillsAccordion = () => {
           </button>
           
           {activeIndex === 0 && <div class="card shadow">
-          <div class="card-body">
+          <div class="card-body tech-skills-card-body">
           Some of my work includes writing automation scripts and jobs, building ITSM solutions for customers and developing custom applications as per client requirements. My company is a leader in the conversational AI space and with the advent of ChatGPT, a large part of our activities revolves around interacting with the tool(Prompt Engineering).
           </div>
         </div>}
@@ -26,7 +26,7 @@ let TechSkillsAccordion = () => {
           Technical skills that I'm proficient in
         </button>
         {activeIndex === 1 && <div class="card shadow">
-                <div class="card-body">
+                <div class="card-body tech-skills-card-body">
                 <ul>
                   <li>Avaamo's internal platform for developing Chatbots</li>
                   <li>Javascript(NodeJS)</li>

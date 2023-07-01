@@ -1,29 +1,31 @@
 import {startups} from '../content.js';
 import Carousel from 'react-bootstrap/Carousel';
 
-const ventureImg = ["ezPark.png", "delOr.png", "naturePure.png"];
+const ventureImg = ["ezPark.png","twilio.png", "delOr.png", "naturePure.png"];
 
 const VenturesCarousel = () => {
   return (
     <Carousel>
       {startups && startups.map((item, index)=>{
           return (
-            <Carousel.Item style={{marginLeft: "100px"}}>
-        <img
-          className="d-block"
-          src={require("../assets/"+ventureImg[index])}
-          alt={item.title}
-          style={{backgroundSize: 'auto',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          width: '200px',
-          height: '200px',}}
-        />
-        <Carousel.Caption>
-          <h3 style={{color:"black"}}>{item.title}</h3>
-          <p style={{color:"black"}}>{item.description}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+            <Carousel.Item style={{marginLeft: "100px", height: "400px"}}>
+            <img
+              className="d-block"
+              src={require(`../assets/${ventureImg[index]}`)}
+              alt={item.title}
+              style={{backgroundSize: 'auto',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              width: '200px',
+              height: '200px',
+              marginTop: "100px"
+            }}
+            />
+            <Carousel.Caption className='custom-carousel-desc'>
+              <h3 style={{color:"white"}}>{item.title}</h3>
+              <p style={{color:"white"}}>{item.description}</p>
+            </Carousel.Caption>
+            </Carousel.Item>
             );
         })}
     </Carousel>

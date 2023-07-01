@@ -129,7 +129,15 @@ margin: 5rem 0;
 .carousel-control-prev-icon, .carousel-control-next-icon{
   background-color: black;
 }
+.custom-carousel-desc{
+  margin-left: 150px;
+  width: 300px;
+  min-height: 250px;
+}
 
 .li-light{
   color:aquamarine;
+}
+.tech-skills-card-body{
+  color: black;
 }
