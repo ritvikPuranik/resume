@@ -39,7 +39,7 @@ function Ventures(){
       <p className="lead mb-4">I'm a digital product junky. Over the years, I've used several web and mobile apps across industries and verticals. Eventually, I decided that it would be interesting to try designing and building some of my own.</p>
       <VenturesCarousel />
       <div class="d-grid gap-2 col-6 mx-auto">
-        <a href={require("../assets/Ritvik Puranik (1).pdf")} class="btn btn-outline-info btn-lg" target="_blank" style={{marginTop: "9rem"}}>Download Resume</a>
+        <a href={require("../assets/Resume-Ritvik-Puranik.pdf")} class="btn btn-outline-info btn-lg" style={{marginTop: "9rem"}}>Download Resume</a>
       </div>
     </div>
   </section>);
