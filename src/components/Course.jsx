@@ -18,9 +18,6 @@ function Course(props){
       <img src={require("../assets/"+courseImg[props.index])} alt={props.title} style={divStyle} />
       <h4 className="fs-2 mt-3">{props.title}</h4>
       <p>{props.description}</p>
-      <a href={props.link} className="btn btn-info">
-        View Certificate
-      </a>
     </div>
   </div>);
 
