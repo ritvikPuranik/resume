@@ -41,38 +41,41 @@ const courses = [ // The image links have to be manually added into "courseImg" 
     {
         "title": "The Complete Web Design Course",
         "description": "Covered serveral key web dev topics ranging from HTML/CSS/JS to frameworks like ExpressJS. Covered Database and Security related cencepts too.",
-        "link": "https://www.udemy.com/certificate/UC-488ffe30-4d2b-4140-be96-dada7e295a8f/",
+        "certificate": "https://www.udemy.com/certificate/UC-69be8b9a-79ab-4cfe-a56b-b590e870ec50/",
         "img":"../assets/webDevBootcamp.png"
     },
     {
         "title": "Blockchain A-Z",
-        "description": "This is description",
-        "link": "https://www.udemy.com/certificate/UC-488ffe30-4d2b-4140-be96-dada7e295a8f/",
+        "description": "Covered the basics of blockchain from how a blockchain works, to consensus mechanism of bitcoin(POW), hashing, mining, mempools and the fundamentals of the technology. Also created a simple blockchain myself using express servers and 2 nodes.",
+        "certificate": "https://www.udemy.com/certificate/UC-488ffe30-4d2b-4140-be96-dada7e295a8f/",
         "img":"../assets/blockchainAZ.png"
     },
     {
         "title": "Ethereum Developer Bootcamp",
-        "description": "This is description",
-        "link": "https://www.udemy.com/certificate/UC-488ffe30-4d2b-4140-be96-dada7e295a8f/",
+        "description": "A comprehensive course on ethereum development. Covers a wide range of concepts from solidity fundamentals to ERC20 and ERC721 protocols. Reinforced through projects during the course.",
+        "certificate": "https://www.udemy.com/certificate/UC-02eab1e7-3a88-4941-907a-8eec76095544/",
         "img":"../assets/ethDevBootcamp.png"
     },
 ];
 
 const projects = [
     {
-        "title": "Blog Site",
-        "description": "A fully functional blog site made using React and Express. A user can register/ login on the platform, compose a post, view his feed, view/ edit his posts. You can find more details in the README of the attached repo",
-        "github": "https://github.com/ritvikPuranik/Blog-Frontend",
+        "title": "Family Wallet",
+        "description": "An expense management tool coupled with a wallet, for the family. A 'Parent' authorizes a transansaction initiated by other family members. They can also add members to the family(each account is a member - parent or non-parent). All transactions are displayed on a dashboard. The application is authenticated so that only family members can login.",
+        "github": "https://github.com/ritvikPuranik/Family-Wallet",
+        "img": "../assets/coffee.jpeg"
     },
     {
         "title": "Vote System",
-        "description": "Made a To-do List using Blockchain",
-        "github": "https://github.com/ritvikPuranik/Vote-System"
+        "description": "A decentralized voting system, with features to add candidates, fund the campaign(more you fund the campaign, more the influence of your vote), compute results based on votes and weightage. Compliant with ERC20 standards.",
+        "github": "https://github.com/ritvikPuranik/Vote-System-React",
+        "img": "../assets/vote-system.png"
     },
     {
-        "title": "Third Project",
-        "description": "Made a To-do List using Blockchain",
-        "github": ""
+        "title": "To-Do-List",
+        "description": "A simple tool to manage daily activities, leveraging blockchain technology. It keeps track of pending and completed items for each account connected to the site(through MetaMask). The frontend made use of Vanilla Js and web3 library, and the smart contract was in solidity hosted on ganache",
+        "github": "https://github.com/ritvikPuranik/to-do-list",
+        "img": "../assets/todolist.png"
     }
 ];
 

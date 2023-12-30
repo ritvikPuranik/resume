@@ -141,3 +141,10 @@ margin: 5rem 0;
 .tech-skills-card-body{
   color: black;
 }
+
+.height-project-desc{
+  min-height: 180px;
+}
+.height-course-desc{
+  min-height: 140px;
+}
