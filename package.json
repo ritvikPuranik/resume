@@ -22,7 +22,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.1",
-    "react-typed": "^1.2.0"
+    "react-slick": "^0.30.3",
+    "react-typed": "^1.2.0",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
@@ -44,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.13"
   }
 }

@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 .opensource-container {
   margin-top: 2rem;
   align-items: center;
@@ -15,9 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 0 2rem;
-  animation: continuous-rotate 10s linear infinite;
 }
 
 .carousel-arrow {
@@ -63,4 +64,16 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  transition: transform 1s ease-in-out; /* Smooth transitions */
+}
+
+.slick-center {
+  transform: scale(1.1); /* Optional: Enlarge the centered slide */
 }

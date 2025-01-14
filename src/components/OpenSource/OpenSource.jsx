@@ -1,6 +1,5 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Slider from "react-slick";
 import "./opensource.css";
 
 // Card
@@ -8,6 +7,32 @@ import { OpenSourceCard } from "./OpenSourceCard/OpenSourceCard";
 import { Heading } from "components/Heading/Heading";
 
 const OpenSource = ({ openSource }) => {
+  const settings = {
+    infinite: true,         
+    slidesToShow: 2.2,          
+    slidesToScroll: 1,        
+    autoplay: true,           
+    autoplaySpeed: 3000,      
+    speed: 500,              
+    centerMode: true,         
+    centerPadding: "0",       
+    pauseOnHover: true,      
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,    // Show 1 slide on smaller screens
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,    // Show 2 slides on medium screens
+        },
+      },
+    ],
+  };
+
   return (
     <section
       data-aos="fade-right"
@@ -17,25 +42,13 @@ const OpenSource = ({ openSource }) => {
     >
       <Heading text="Contributions to the Open-Source Community" />
       <div className="opensource-cards">
-        {openSource &&
-          <Carousel
-            showThumbs={false}
-            showStatus={false}
-            infiniteLoop
-            centerMode
-            centerSlidePercentage={35}
-            autoPlay
-            interval={3000}
-            transitionTime={1000}
-          >
-            {openSource?.map((repo, index) => (
-              <OpenSourceCard
-                key={index}
-                repo={repo}
-              />
+        {openSource && (
+          <Slider {...settings}>
+            {openSource.map((repo, index) => (
+              <OpenSourceCard key={index} repo={repo} />
             ))}
-          </Carousel>
-        }
+          </Slider>
+        )}
       </div>
     </section>
   );
