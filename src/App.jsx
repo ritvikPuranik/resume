@@ -7,7 +7,8 @@ import Menu from "components/Menu/Menu"
 import Portfolio from "components/Portfolio"
 import Contact from "components/Contact/Contact"
 import Services from "components/Services/Services"
-import Testimonials from "components/Testimonials/Testimonials"
+import OpenSource from "components/OpenSource/OpenSource"
+import AboutMe from "components/AboutMe/AboutMe"
 import Footer from "components/Footer/Footer"
 // Sanity
 import sanityClient from "client"
@@ -17,23 +18,16 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [projects, setProjects] = useState([])
-  const [services, setServices] = useState([])
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [projects, setProjects] = useState([]);
+  const [services, setServices] = useState([]);
+  const [openSource, setOpenSource] = useState([]);
 
-  const [testimonials, setTestimonials] = useState([])
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type in ["testimonial", "portfolio","service"]]{
-          _type == "testimonial" => {
-            id,
-            name,
-            text,
-            country,
-            url
-          },
+        `*[_type in ["portfolio","service","openSource"]]{
           _type == "portfolio" => {
             id,
             title,
@@ -52,18 +46,25 @@ function App() {
               asset->{url}
             },
           },
+          _type == "openSource" => {
+            repository,
+            stars,
+            commitLink,
+            contributionDate,
+          },
         }
         `
       )
       .then((data) => {
-        let tempTestimonials = []
-        let tempProjects = []
-        let tempServices = []
+        let tempOpenSource = [];
+        let tempProjects = [];
+        let tempServices = [];
 
+        console.log("data>>", data);
         data.map((doc) => {
-          if (doc.country) {
-            // It is a testimonial
-            tempTestimonials.push(doc)
+          if(doc.repository) {
+            // It is an openSource project
+            tempOpenSource.push(doc)
           } else if (doc.liveUrl) {
             // It is a project
             tempProjects.push(doc)
@@ -72,8 +73,8 @@ function App() {
           }
 
           return null
-        })
-        setTestimonials(tempTestimonials)
+        });
+        setOpenSource(tempOpenSource);
         setProjects(tempProjects)
         setServices(tempServices)
       })
@@ -89,9 +90,10 @@ function App() {
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
-      <Services services={services} />
+      <AboutMe />
       <Portfolio projects={projects} />
-      <Testimonials testimonials={testimonials} />
+      <OpenSource openSource={openSource} />
+      <Services services={services} />
       <Contact />
       <Footer />
     </div>

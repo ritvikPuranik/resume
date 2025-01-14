@@ -1,9 +1,9 @@
 import portfolio from './portfolio';
 import service from './service';
-import testimonial from './testimonial';
+import openSource from './openSource';
 
 export const schemaTypes = [
   portfolio,
   service,
-  testimonial,
+  openSource
 ]

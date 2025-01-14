@@ -49,7 +49,7 @@ const Portfolio = ({ projects }) => {
       name="portfolio"
       id="portfolio"
     >
-      <Heading text="Portfolio" style={{ padding: "3rem" }} />
+      <Heading text="What I have done in the past" style={{ padding: "3rem" }} />
       <div className="list">
         {projectList &&
           projectList.map((list) => (

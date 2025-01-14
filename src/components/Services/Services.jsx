@@ -15,7 +15,7 @@ const Services = ({ services }) => {
       name="services"
       id="services"
     >
-      <Heading text="Services" />
+      <Heading text="What I can help you with" />
       <div className="services-cards">
         {services &&
           services?.map(({ title, icon, tags }, index) => (

@@ -37,7 +37,7 @@ const Home = () => {
         initial="initial"
         animate="animate"
       >
-        <h1>I'm Ritvik</h1>
+        <h1>Hey, its Ritvik</h1>
         <p style={{ fontSize: "1.2rem ", fontWeight: "600" }}>
           I am
           <span style={{ marginLeft: "8px" }}>
