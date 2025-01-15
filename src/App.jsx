@@ -9,6 +9,7 @@ import Contact from "components/Contact/Contact"
 import Services from "components/Services/Services"
 import OpenSource from "components/OpenSource/OpenSource"
 import AboutMe from "components/AboutMe/AboutMe"
+import Blog from "components/Blog/Blog"
 import Footer from "components/Footer/Footer"
 // Sanity
 import sanityClient from "client"
@@ -94,6 +95,7 @@ function App() {
       <Portfolio projects={projects} />
       <OpenSource openSource={openSource} />
       <Services services={services} />
+      <Blog />
       <Contact />
       <Footer />
     </div>
