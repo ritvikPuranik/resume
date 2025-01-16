@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ritvikPuranik/static/css/main.15245893.css",
-    "main.js": "/ritvikPuranik/static/js/main.b60f1f4c.js",
-    "static/media/dev.svg": "/ritvikPuranik/static/media/dev.fed67f6d7b3dfd0c5e94048e5f2d3058.svg",
-    "static/media/shake.svg": "/ritvikPuranik/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
-    "static/media/slick.svg": "/ritvikPuranik/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/ritvikPuranik/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/ritvikPuranik/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/ritvikPuranik/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/ritvikPuranik/index.html",
-    "main.15245893.css.map": "/ritvikPuranik/static/css/main.15245893.css.map",
-    "main.b60f1f4c.js.map": "/ritvikPuranik/static/js/main.b60f1f4c.js.map"
+    "main.css": "/resume/static/css/main.fd4d4e59.css",
+    "main.js": "/resume/static/js/main.8d0f0421.js",
+    "static/media/dev.svg": "/resume/static/media/dev.fed67f6d7b3dfd0c5e94048e5f2d3058.svg",
+    "static/media/shake.svg": "/resume/static/media/shake.c7165a1f59e2367bf4395199384f606f.svg",
+    "static/media/slick.svg": "/resume/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/resume/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/resume/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/resume/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/resume/index.html",
+    "main.fd4d4e59.css.map": "/resume/static/css/main.fd4d4e59.css.map",
+    "main.8d0f0421.js.map": "/resume/static/js/main.8d0f0421.js.map"
   },
   "entrypoints": [
-    "static/css/main.15245893.css",
-    "static/js/main.b60f1f4c.js"
+    "static/css/main.fd4d4e59.css",
+    "static/js/main.8d0f0421.js"
   ]
 }
