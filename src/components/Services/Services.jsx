@@ -10,7 +10,7 @@ import { Heading } from "components/Heading/Heading";
 const Services = ({ services }) => {
   return (
     <section
-      data-aos="fade-right"
+      data-aos="fade-left"
       className="services-container"
       name="services"
       id="services"
