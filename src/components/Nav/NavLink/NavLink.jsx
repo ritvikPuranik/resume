@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 export const NavLink = ({ path, text, onClick }) => (
   <li className="link">
     <Link
+    style={{cursor: "pointer", fontSize: "1.8rem"}}
       className="anchor"
       activeClass="active"
       to={path}

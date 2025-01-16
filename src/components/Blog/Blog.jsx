@@ -61,7 +61,7 @@ const Blog = () => {
           ))}
         </div>
         <p>
-          Want to know more? Check out <a href="https://technudge.in" target="_blank" rel="noopener noreferrer">https://technudge.in</a>
+          Like to read? Check out <a href="https://technudge.in" target="_blank" rel="noopener noreferrer">https://technudge.in</a>
         </p>
       </div>
       </section>
