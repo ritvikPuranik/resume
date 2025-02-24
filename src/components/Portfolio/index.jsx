@@ -16,7 +16,7 @@ import { faUserLock } from "@fortawesome/free-solid-svg-icons/faUserLock"
 import PortfolioItem from "./PortfolioItem/PortfolioItem"
 
 const Portfolio = ({ projects }) => {
-  const [selected, setSelected] = useState("web3");
+  const [selected, setSelected] = useState("Full Stack");
   const [data, setData] = useState([])
   const [projectList, setProjectList] = useState([])
 
