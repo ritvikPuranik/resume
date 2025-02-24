@@ -50,7 +50,7 @@ const Portfolio = ({ projects }) => {
       id="portfolio"
     >
       <Heading text="What I have done in the past" style={{ padding: "3rem" }} />
-      <div className="list">
+      {/* <div className="list">
         {projectList &&
           projectList.map((list) => (
             <PortfolioItem
@@ -61,12 +61,29 @@ const Portfolio = ({ projects }) => {
               id={list}
             />
           ))}
-      </div>
+      </div> */}
       <div className="row">
         {data.length &&
           data.map((item, index) => (
-            <div className="column" key={index}>
-              <img src={item?.img.asset.url} alt={item.title} />
+            <div 
+              className="column" 
+              key={index}
+              style={{ 
+                width: '300px',
+                height: '200px',
+                margin: '1rem',
+                position: 'relative'
+              }}
+            >
+              <img 
+                src={item?.img.asset.url} 
+                alt={item.title}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
               <div className="overlay">
                 <div className="left">
                   <h3>{item.title}</h3>

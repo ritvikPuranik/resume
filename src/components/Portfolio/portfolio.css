@@ -16,12 +16,25 @@
   align-items: center;
 }
 
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2rem;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio .column {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .column {
@@ -49,6 +62,21 @@
   height: 100%;
   object-fit: cover;
   opacity: 1;
+}
+
+.portfolio .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .overlay {
@@ -92,6 +120,10 @@
 .right .icon:hover {
   color: white;
   transform: scale(1);
+}
+
+.portfolio .column:hover .overlay {
+  opacity: 1;
 }
 
 /* MEDIA */
