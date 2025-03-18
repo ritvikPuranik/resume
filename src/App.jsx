@@ -10,6 +10,7 @@ import Services from "components/Services/Services"
 import OpenSource from "components/OpenSource/OpenSource"
 import AboutMe from "components/AboutMe/AboutMe"
 import Blog from "components/Blog/Blog"
+import Chatbot from "components/Chatbot/Chatbot"
 import Footer from "components/Footer/Footer"
 // Sanity
 import sanityClient from "client"
@@ -97,6 +98,7 @@ function App() {
       <Services services={services} />
       <Blog />
       <Contact />
+      <Chatbot />
       <Footer />
     </div>
   )
