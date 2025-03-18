@@ -5,8 +5,9 @@ import profilePicture from "../../images/profile_picture.png";
 const Chatbot = () => {
   return (
     <BubbleChat
-      chatflowid="dc708627-f366-4614-b83c-e08bfeaf5e4e"
-      apiHost="http://localhost:3000"
+      chatflowid="bfdad2e5-228d-4b81-99ba-29968bf87723"
+      apiHost="https://chatbot.technudge.in"
+    //   parseDecodeHtml={true}
       theme={{
         button: {
           backgroundColor: "#bd6708",
@@ -60,8 +61,9 @@ const Chatbot = () => {
           ],
           starterPromptFontSize: 15,
           clearChatOnReload: false,
-          sourceDocsTitle: "Sources:",
+        //   sourceDocsTitle: "Sources:",
           renderHTML: true,
+        //   renderMarkdown: true,
           botMessage: {
             backgroundColor: "#f7f8ff",
             textColor: "#303235",
